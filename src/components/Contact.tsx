@@ -23,9 +23,9 @@ const Contact: React.FC = () => {
     e.preventDefault();
 
     // Replace these with your actual EmailJS IDs
-    const serviceID = "your_service_id";
-    const templateID = "your_template_id";
-    const publicKey = "your_public_key";
+    const serviceID = "service_6mvz8d5";
+    const templateID = "template_rvp7k63";
+    const publicKey = "d7prAMqitYPM3JwmH";
 
     emailjs.send(serviceID, templateID, formData, publicKey)
       .then(() => {
