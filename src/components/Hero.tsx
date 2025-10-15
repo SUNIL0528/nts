@@ -11,7 +11,8 @@ const Hero: React.FC = () => {
           backgroundImage: 'url(https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-purple-800/80 to-green-700/70"></div>
+
       </div>
 
       {/* Content */}

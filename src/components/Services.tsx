@@ -100,7 +100,7 @@ const Services: React.FC = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-center text-white">
+        <div className="bg-gradient-to-r from-purple-800/80 to-green-700/70 rounded-2xl p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Operations?</h3>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Let our expert team help you achieve operational excellence with our comprehensive engineering solutions.

@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   return (
     <>
       {/* Top Info Bar */}
-      <div className="bg-blue-900 text-white py-2 px-4 text-sm hidden md:block">
+      <div className="bg-purple-900 text-white py-2 px-4 text-sm hidden md:block">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
@@ -46,14 +46,20 @@ const Header: React.FC = () => {
       </div>
 
       {/* Main Header */}
-      <header className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
-      }`}>
+      <header
+  className={`fixed w-full z-50 transition-all duration-300 ${
+    isScrolled
+      ? 'bg-gradient-to-r from-blue-900 via-purple-800 to-green-700 shadow-lg'
+      : 'bg-gradient-to-r from-blue-900/90 via-purple-800/80 to-green-700/70 backdrop-blur-sm'
+  }`}
+>
+
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">N</span>
+                {/* <span className="text-white font-bold text-xl">N</span> */}
+                <img   src="assets/logo.jpeg"   alt="NTS Solutions Logo"  className="h-10 w-auto object-contain" />
               </div>
               <div>
                 <h1 className="font-bold text-xl text-gray-800">New Tech Solutions</h1>

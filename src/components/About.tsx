@@ -4,40 +4,22 @@ import { Target, Eye, Award, Users2 } from 'lucide-react';
 const About: React.FC = () => {
   const leadership = [
     {
-      name: 'Shanthi Saravanan',
-      position: 'Chief Executive Officer',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      bio: '20+ years in automotive engineering and quality management'
-    },
-    {
-      name: 'Saravanan',
-      position: 'Head of Engineering',
+      name: 'Saravanan Shankar',
+      position: 'Managing Director',
       image: 'https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       bio: 'Project Mgmt./Sourcing, 30 years Experience in SKF'
     },
     {
       name: 'Shailesh Seth',
-      position: 'Chief Operational Officer',
+      position: 'Marketing Manager',
       image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       bio: 'Product Developer, 30 years Experience in SKF'
     },
     {
-      name: 'Naveen Kumar',
-      position: 'Surface treatment auditing specialist',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      bio: '5+ years as Coating Inspector'
-    },
-    {
       name: ' Tarun Kumar',
-      position: 'Mechanical Engineer',
+      position: 'Business Manager',
       image: 'https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       bio: 'Expert in precision manufacturing and metrology solutions'
-    },
-    {
-      name: 'Chandrasekhar',
-      position: 'Quality Director',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      bio: 'ISO/IATF certification specialist with global experience'
     }
   ];
 

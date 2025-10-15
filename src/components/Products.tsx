@@ -33,7 +33,7 @@ const Products: React.FC = () => {
       icon: CircleDot,
       title: 'Bearings & Allied Products',
       description: 'High-quality bearing components and allied products for automotive industry',
-      image: 'https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      image: 'assets/product_1.jpeg',
       products: [
         'Bearing rings',
         'Hub bearings',
@@ -101,7 +101,7 @@ const Products: React.FC = () => {
                     </div>
                   </div>
                   
-                  <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                  <button className="bg-purple-800/80 text-white px-6 py-3 rounded-lg hover:bg-purple-700/70 transition-colors font-medium">
                     View Details
                   </button>
                 </div>

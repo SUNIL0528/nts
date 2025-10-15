@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import emailjs from 'emailjs-com';
+
+
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -19,38 +21,43 @@ const Contact: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
+  setLoading(true); 
 
-    // Replace these with your actual EmailJS IDs
-    const serviceID = "service_6mvz8d5";
-    const templateID = "template_rvp7k63";
-    const publicKey = "d7prAMqitYPM3JwmH";
+  emailjs
+    .send("service_6mvz8d5", "template_rvp7k63", formData, "d7prAMqitYPM3JwmH")
+    .then(
+      () => {
+        setLoading(false);
+        alert("✅ Message sent successfully!");
 
-    emailjs.send(serviceID, templateID, formData, publicKey)
-      .then(() => {
-        alert("✅ Thank you! Your message has been sent.");
         setFormData({
-          name: '',
-          email: '',
-          company: '',
-          phone: '',
-          subject: '',
-          message: ''
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          subject: "",
+          message: "",
         });
-      })
-      .catch((error) => {
-        console.error("EmailJS Error:", error);
-        alert("❌ Failed to send message. Please try again later.");
-      });
-  };
+      },
+      (error) => {
+        setLoading(false); 
+        console.log(error);
+        alert(`❌ Failed to send message. Please try again.`);
+      }
+    );
+};
+
 
   const locations = [
     {
       title: 'Bangalore Head Office',
       address: '#2, 2nd Cross, 2nd Main, Shastry Layout Kempe Gowda Garden Abbigere, Bangalore-560090.',
       phone: '+91-9448314975',
-      email: 'ntssolutions0618@gmail.com',
+      email: 'info@newtechsolutions.in',
       hours: 'Mon - Fri: 9:00 AM - 6:00 PM'
     },
     {
@@ -184,12 +191,36 @@ const Contact: React.FC = () => {
               </div>
 
               <button
-                type="submit"
-                className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-medium flex items-center justify-center group"
-              >
-                Send Mail
-                <Send size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </button>
+  type="submit"
+  disabled={loading}
+  className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 
+             text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center"
+>
+  {loading ? (
+    <svg
+      className="animate-spin h-5 w-5 text-white"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <circle
+        className="opacity-25"
+        cx="12"
+        cy="12"
+        r="10"
+        stroke="currentColor"
+        strokeWidth="4"
+      ></circle>
+      <path
+        className="opacity-75"
+        fill="currentColor"
+        d="M4 12a8 8 0 018-8v8H4z"
+      ></path>
+    </svg>
+  ) : (
+    "Send Message"
+  )}
+</button>
             </form>
           </div>
 
@@ -239,7 +270,7 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Quick Contact */}
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-center text-white">
+        <div className="mt-16 bg-gradient-to-r from-purple-800/80 to-green-700/70 rounded-2xl p-12 text-center text-white">
           <h3 className="text-2xl font-bold mb-4">Need Immediate Assistance?</h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
             For urgent inquiries or technical support, our team is ready to assist you. 

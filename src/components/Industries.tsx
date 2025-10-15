@@ -5,17 +5,17 @@ const Industries: React.FC = () => {
   const industries = [
     {
       icon: Car,
-      title: 'Automotive Sector',
+      title: 'Dedicated Rubber Seals Plant',
       description: 'Comprehensive solutions for automotive manufacturers and suppliers',
-      image: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      image: 'https://media.istockphoto.com/id/1338928555/photo/gaskets-used-in-hydraulics-pneumatics-and-connections-of-parts-of-mechanisms.jpg?s=612x612&w=0&k=20&c=6RpXmgGVD1NQuipmrBAAD4d_5J3g3Qlr5YqudOdYDEY=',
       services: [
-        'Precision gauges for engine components',
-        'Quality control systems',
-        'Assembly line automation',
-        'Testing equipment',
+        'Leak Prevention & Containment',
+        'Durability & Flexibility',
+        'Vibration & Noise Reduction',
+        'Material Versatility',
         'IATF 16949 compliance support'
       ],
-      stats: { clients: '50+', projects: '200+' }
+      stats: { clients: '5+', projects: '20+' }
     },
     {
       icon: Factory,
@@ -29,7 +29,7 @@ const Industries: React.FC = () => {
         'Technical training programs',
         'Vendor development'
       ],
-      stats: { clients: '30+', projects: '150+' }
+      stats: { clients: '3+', projects: '5+' }
     },
     {
       icon: CircleDot,
@@ -43,21 +43,21 @@ const Industries: React.FC = () => {
         'Quality inspection services',
         'Supply chain optimization'
       ],
-      stats: { clients: '25+', projects: '100+' }
+      stats: { clients: '5+', projects: '10+' }
     },
     {
       icon: Tractor,
-      title: 'Agricultural Components',
-      description: 'Durable solutions for agricultural machinery and equipment',
+      title: 'Advanced Metrology & Testing',
+      description: ' Accurate measurement and testing for product reliability.',
       image: 'https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
       services: [
-        'Heavy-duty component design',
-        'Durability testing',
-        'Weather-resistant solutions',
-        'Cost-effective manufacturing',
+        'Precision measurement techniques',
+        'Comprehensive product testing',
+        'Enhanced quality assurance',
+        'Improved product reliability',
         'Field performance optimization'
       ],
-      stats: { clients: '20+', projects: '80+' }
+      stats: { clients: '2+', projects: '8+' }
     }
   ];
 
@@ -121,9 +121,9 @@ const Industries: React.FC = () => {
                       <div className="text-2xl font-bold text-blue-600">{industry.stats.projects}</div>
                       <div className="text-xs text-gray-500">Projects</div>
                     </div>
-                    <button className="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                    {/* <button className="text-blue-600 hover:text-blue-800 font-medium text-sm">
                       Learn More →
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
@@ -132,7 +132,7 @@ const Industries: React.FC = () => {
         </div>
 
         {/* Industry Stats */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-white text-center">
+        <div className="bg-gradient-to-r from-purple-800/80 to-green-700/70 rounded-2xl p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-8">Our Impact Across Industries</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
