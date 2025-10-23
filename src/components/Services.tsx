@@ -157,12 +157,13 @@ const Services: React.FC = () => {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-white/20 backdrop-blur-2xl border border-white/30 rounded-3xl shadow-2xl p-8 max-w-3xl w-full relative text-white"
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 50, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
+            className="bg-white/20 backdrop-blur-2xl border border-white/30 rounded-3xl shadow-2xl p-8 max-w-5xl w-full relative text-white
+                      max-h-[90vh] overflow-y-auto"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 50, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+>
               {/* Close Button */}
               <button
                 onClick={() => {

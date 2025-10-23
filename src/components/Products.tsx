@@ -33,7 +33,7 @@ const Products: React.FC = () => {
       icon: CircleDot,
       title: 'Bearings & Allied Products',
       description: 'High-quality bearing components and allied products for automotive industry',
-      image: 'assets/product_1.jpeg',
+      image: 'https://media.istockphoto.com/id/500144555/photo/ball-bearings.jpg?s=612x612&w=0&k=20&c=9psBUXINxH0wu4uGgFNQ4lSKD6EI8oyWsJl7wl4lUzw=',
       products: [
         'Bearing rings',
         'Hub bearings',
