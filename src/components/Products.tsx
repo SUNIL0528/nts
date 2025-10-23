@@ -101,9 +101,9 @@ const Products: React.FC = () => {
                     </div>
                   </div>
                   
-                  <button className="bg-purple-800/80 text-white px-6 py-3 rounded-lg hover:bg-purple-700/70 transition-colors font-medium">
+                  {/* <button className="bg-purple-800/80 text-white px-6 py-3 rounded-lg hover:bg-purple-700/70 transition-colors font-medium">
                     View Details
-                  </button>
+                  </button> */}
                 </div>
               </div>
             );

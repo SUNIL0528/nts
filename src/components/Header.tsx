@@ -49,8 +49,8 @@ const Header: React.FC = () => {
       <header
   className={`fixed w-full z-50 transition-all duration-300 ${
     isScrolled
-      ? 'bg-gradient-to-r from-blue-900 via-purple-800 to-green-700 shadow-lg'
-      : 'bg-gradient-to-r from-blue-900/90 via-purple-800/80 to-green-700/70 backdrop-blur-sm'
+      ? 'bg-gradient-to-r from-blue-500 via-purple-400 to-green-300 shadow-lg'
+      : 'bg-gradient-to-r from-blue-500/50 via-purple-400/40 to-green-300/30 backdrop-blur-sm'
   }`}
 >
 
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
                 <a
                   href="#contact"
                   onClick={() => setIsMenuOpen(false)}
-                  className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors duration-200 font-medium text-center"
+                  className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-500 transition-colors duration-500 font-medium text-center"
                 >
                   Get Quote
                 </a>
