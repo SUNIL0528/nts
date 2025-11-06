@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-2xl">New Tech Solutions</h3>
-                <p className="text-sm text-gray-400">Engineering Excellence Since 2018</p>
+                <p className="text-sm text-gray-400">Sealing Strength, Delivering Excellence</p>
               </div>
             </div>
             
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3 mb-6">
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-blue-400" />
-                <span className="text-gray-300">+91-80-28472916</span>
+                <span className="text-gray-300">+91 9448314975</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-blue-400" />

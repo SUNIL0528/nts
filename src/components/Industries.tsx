@@ -4,20 +4,6 @@ import { Car, Factory, CircleDot, Tractor } from 'lucide-react';
 const Industries: React.FC = () => {
   const industries = [
     {
-      icon: Car,
-      title: 'Dedicated Rubber Seals Plant',
-      description: 'Comprehensive solutions for automotive manufacturers and suppliers',
-      image: 'https://media.istockphoto.com/id/1338928555/photo/gaskets-used-in-hydraulics-pneumatics-and-connections-of-parts-of-mechanisms.jpg?s=612x612&w=0&k=20&c=6RpXmgGVD1NQuipmrBAAD4d_5J3g3Qlr5YqudOdYDEY=',
-      services: [
-        'Leak Prevention & Containment',
-        'Durability & Flexibility',
-        'Vibration & Noise Reduction',
-        'Material Versatility',
-        'IATF 16949 compliance support'
-      ],
-      stats: { clients: '5+', projects: '20+' }
-    },
-    {
       icon: Factory,
       title: 'General Industrial Manufacturing',
       description: 'Engineering solutions for diverse industrial applications',
@@ -25,40 +11,40 @@ const Industries: React.FC = () => {
       services: [
         'Custom machinery design',
         'Process optimization',
-        'Quality management systems',
+        'Vendor Assessment',
         'Technical training programs',
-        'Vendor development'
+        'VDA 6.3 audit training'
       ],
       stats: { clients: '3+', projects: '5+' }
     },
     {
-      icon: CircleDot,
-      title: 'Bearings & Allied Components',
-      description: 'Specialized solutions for bearing manufacturers and suppliers',
-      image: 'https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      icon: Car,
+      title: 'Dedicated Rubber Seals Plant',
+      description: 'Comprehensive solutions for automotive manufacturers and suppliers',
+      image: 'https://media.istockphoto.com/id/1338928555/photo/gaskets-used-in-hydraulics-pneumatics-and-connections-of-parts-of-mechanisms.jpg?s=612x612&w=0&k=20&c=6RpXmgGVD1NQuipmrBAAD4d_5J3g3Qlr5YqudOdYDEY=',
       services: [
-        'Bearing ring manufacturing',
-        'Precision measurement systems',
-        'Heat treatment solutions',
-        'Quality inspection services',
-        'Supply chain optimization'
+        'Leak Prevention & Containment',
+        'Durability & Flexibility',
+        'Ensures long service life under pressure',
+        'Material Versatility',
+        'IATF 16949 compliance support'
       ],
-      stats: { clients: '5+', projects: '10+' }
+      stats: { clients: '5+', projects: '20+' }
     },
-    {
-      icon: Tractor,
-      title: 'Advanced Metrology & Testing',
-      description: ' Accurate measurement and testing for product reliability.',
-      image: 'https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      services: [
-        'Precision measurement techniques',
-        'Comprehensive product testing',
-        'Enhanced quality assurance',
-        'Improved product reliability',
-        'Field performance optimization'
-      ],
-      stats: { clients: '2+', projects: '8+' }
-    }
+    // {
+    //   icon: CircleDot,
+    //   title: 'Bearings & Allied Components',
+    //   description: 'Specialized solutions for bearing manufacturers and suppliers',
+    //   image: 'https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    //   services: [
+    //     'Bearing ring manufacturing',
+    //     'Precision measurement systems',
+    //     'Heat treatment solutions',
+    //     'Quality inspection services',
+    //     'Supply chain optimization'
+    //   ],
+    //   stats: { clients: '5+', projects: '10+' }
+    // }
   ];
 
   return (

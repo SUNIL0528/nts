@@ -56,15 +56,15 @@ const Contact: React.FC = () => {
     {
       title: 'Bangalore Head Office',
       address: '#2, 2nd Cross, 2nd Main, Shastry Layout Kempe Gowda Garden Abbigere, Bangalore-560090.',
-      phone: '+91-9448314975',
+      phone: '+91 9448314975',
       email: 'info@newtechsolutions.in',
       hours: 'Mon - Fri: 9:00 AM - 6:00 PM'
     },
     {
       title: 'Pune Branch',
       address: 'No.2 building flat no 203, SWISS County, Near PMC school, Theragaon, Pune 411033.',
-      phone: '+91-93724 16049',
-      email: 'shailesh.shet61@gmail.com',
+      phone: '+91 9372416049',
+      email: 'info@newtechsolutions.in',
       hours: 'Mon - Fri: 9:00 AM - 6:00 PM'
     }
   ];
@@ -226,7 +226,7 @@ const Contact: React.FC = () => {
 
           {/* Contact Information */}
           <div>
-            <div className="space-y-6 mb-8">
+            <div className="space-y-8 mb-10">
               {locations.map((location, index) => (
                 <div key={index} className="bg-white rounded-2xl p-6 shadow-lg">
                   <h3 className="text-xl font-bold text-gray-800 mb-4">{location.title}</h3>
@@ -253,7 +253,7 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Google Map */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            {/* <div className="bg-white rounded-2xl p-6 shadow-lg">
               <h3 className="text-xl font-bold text-gray-800 mb-4">Find Us</h3>
               <div className="aspect-video rounded-xl overflow-hidden">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4769.674225916078!2d77.52152015381918!3d13.07351326658576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae22eec73efd01%3A0x7dd6e8e4d21484af!2sAbbigere%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1756991027482!5m2!1sen!2sin" 
@@ -265,7 +265,7 @@ const Contact: React.FC = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

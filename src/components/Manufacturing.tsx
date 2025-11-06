@@ -4,30 +4,17 @@ import { Factory, Gauge, TestTube, Users } from 'lucide-react';
 const Manufacturing: React.FC = () => {
   const facilities = [
     {
-      title: 'Production Facility',
-      icon: Factory,
-      description: 'State-of-the-art manufacturing with advanced machinery',
-      capabilities: [
-        'CNC machining centers',
-        'Precision grinding',
-        'Heat treatment & annealing',
-        'Forging operations',
-        'Surface finishing'
-      ],
-      image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
-    },
-    {
-      title: 'Testing & Measurement',
+      title: 'Rubber Seal',
       icon: TestTube,
-      description: 'Comprehensive quality control and testing capabilities',
+      description: 'Durable oil-leak prevention seal',
       capabilities: [
-        'Zeiss contour tester',
-        'MPI (Magnetic Particle Inspection)',
-        'Grade sorting systems',
-        'Hardness testing',
-        'Dimensional inspection'
+        'Prevents oil leakage effectively',
+        'Resists wear and high temperature',
+        'Enhances handle durability and performance',
+        'Ensures long service life under pressure',
+        'Provides tight and flexible sealing'
       ],
-      image: 'https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+      image: 'https://i5.walmartimages.com/seo/Pool-Column-Rubber-Gasket-Connector-Seals-Gaskets-Fittings-Replaces-with-Gasket-Washer-Plunger-Rubber-Washer-for-10745-10262-or-10255-10745_bfc58917-84c4-46a7-bde5-be76c7e130c6.fdfa112fbd660d1316542da9db628a10.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF'
     }
   ];
 
@@ -78,7 +65,7 @@ const Manufacturing: React.FC = () => {
                     <img
                       src={facility.image}
                       alt={facility.title}
-                      className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                      className="w-full h-80 object-contain hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3">
                       <IconComponent className="text-blue-600" size={24} />

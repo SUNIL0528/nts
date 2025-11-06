@@ -1,37 +1,65 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArrowRight, Award, Users, Wrench } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-purple-800/80 to-green-700/70"></div>
+  // Add multiple background images here
+  const backgrounds = [
+    'https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+    'https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+    'https://images.pexels.com/photos/258083/pexels-photo-258083.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop'
+  ];
 
-      </div>
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % backgrounds.length);
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+
+          {/* Background Slideshow */}
+          {/* Background Slideshow */}
+    <div className="absolute inset-0">
+      {backgrounds.map((img, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-[1500ms] ${
+            index === current ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ backgroundImage: `url(${img})` }}
+        ></div>
+      ))}
+
+      {/* Soft overlay to keep text visible without hiding image */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/25 via-purple-800/20 to-green-700/15"></div>
+    </div>
+
 
       {/* Content */}
       <div className="relative container mx-auto px-4 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
+
+          {/* Left Text */}
           <div className="text-white">
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
               Innovative & Reliable 
               <span className="block text-orange-400">Engineering Solutions</span>
             </h1>
+
             <p className="text-xl lg:text-2xl mb-8 text-blue-100">
               For the Automotive and Industrial Sectors
             </p>
+
             <p className="text-lg mb-8 text-blue-200 max-w-2xl">
               Since 2018, we've been delivering cutting-edge engineering solutions, 
               precision manufacturing, and quality management services to industry leaders worldwide.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a
                 href="#services"
@@ -74,20 +102,20 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Content - Features */}
+          {/* Right Side Panel */}
           <div className="hidden lg:block">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 space-y-6">
               <h3 className="text-2xl font-bold text-white mb-6">Why Choose NTS?</h3>
-              
+
               <div className="space-y-4">
                 {[
                   { title: 'End-to-End Engineering Solutions', desc: 'Comprehensive engineering services, covering design, development,implementation, and support' },
                   { title: 'Project Management and Technical Training', desc: 'Expert project management, we ensure efficient project execution' },
                   { title: 'Quality Services with Systematic Approaches', desc: 'High quality services through structured methodologies, ensuring consistency, reliability, and adherence to industry standards' },
-                  { title: 'Continuous Improvement Focus', desc: 'Commited to continuous improvement drives innovation and process optimization' },
+                  { title: 'Continuous Improvement Focus', desc: 'Committed to continuous improvement drives innovation and process optimization' },
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-orange-400 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-orange-400 rounded-full mt-3"></div>
                     <div>
                       <h4 className="font-semibold text-white">{item.title}</h4>
                       <p className="text-blue-200 text-sm">{item.desc}</p>
@@ -97,6 +125,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

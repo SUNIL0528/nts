@@ -28,7 +28,7 @@ const About: React.FC = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">About New Tech Solutions</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Why Choose Us?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Established in 2018, we are committed to delivering innovative engineering solutions 
             with unwavering quality and reliability for the automotive and industrial sectors.

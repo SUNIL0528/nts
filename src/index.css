@@ -7,3 +7,13 @@ body {
   font-family: 'Outfit', sans-serif;
   font-size: larger;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Adjust this value to match your header + topbar height */
+section {
+  scroll-margin-top: 100px;
+}
+
