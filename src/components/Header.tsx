@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 
+import logo from '../assets/logo.jpeg';
+
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -94,7 +96,7 @@ const Header: React.FC = () => {
               <div className="flex items-center space-x-2">
                 <div className="w-15 h-15 bg-blue-600 rounded-lg flex items-center justify-center">
                   <img
-                    src="assets/logo.jpeg"
+                    src={logo}
                     alt="NTS Solutions Logo"
                     className="h-20 w-auto object-contain"  
                   />
